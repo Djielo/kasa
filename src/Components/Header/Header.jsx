@@ -23,8 +23,8 @@ function Header() {
       <Image src={logo} alt="Logo du site KASA" />
       <nav>
         <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/Lodging/">Logements</StyledLink>
-        <StyledLink to="/AboutUs/">A propos</StyledLink>
+        <StyledLink to="/lodging/">Logements</StyledLink>
+        <StyledLink to="/aboutus/">A propos</StyledLink>
       </nav>
     </WrapperHeader>
   );

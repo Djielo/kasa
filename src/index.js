@@ -27,10 +27,10 @@ root.render(
       <Route exact path="/">
         <Home />
       </Route>
-      <Route exact path="/">
+      <Route path="/lodging/">
         <Lodging />
       </Route>
-      <Route exact path="/">
+      <Route path="/aboutus/">
         <AboutUs />
       </Route>
       <Route>
