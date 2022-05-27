@@ -5,16 +5,17 @@ import colors from "../../Utils/styles/colors";
 
 const StyledLink = styled(Link)`
   color: ${colors.primary};
+  padding: 10px;
 `;
 
 const WrapperHeader = styled.div`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 20px;
+  padding: 20px 30px;
 `;
 const Image = styled.img`
-  width: 150px;
+  width: 200px;
 `;
 
 function Header() {

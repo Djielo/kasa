@@ -1,6 +1,6 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { BrowserRouter as Router, Route } from "react-router-dom";
+import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
 import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
@@ -24,18 +24,20 @@ root.render(
     <Router>
       <GlobalStyle />
       <Header />
-      <Route exact path="/">
-        <Home />
-      </Route>
-      <Route path="/lodging/">
-        <Lodging />
-      </Route>
-      <Route path="/aboutus/">
-        <AboutUs />
-      </Route>
-      <Route>
-        <Error />
-      </Route>
+      <Switch>
+        <Route exact path="/">
+          <Home />
+        </Route>
+        <Route path="/lodging/">
+          <Lodging />
+        </Route>
+        <Route path="/aboutus/">
+          <AboutUs />
+        </Route>
+        <Route>
+          <Error />
+        </Route>
+      </Switch>
     </Router>
   </React.StrictMode>
 );
