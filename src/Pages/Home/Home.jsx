@@ -1,8 +1,14 @@
+import styled from "styled-components"
+
+const Paragraphe = styled.div`
+  font-size: 24px;
+`;
+
 function Home() {
   return (
     <div>
       <header>
-        <p>Je suis un test</p>
+        <Paragraphe>Je suis un test</Paragraphe>
       </header>
     </div>
   );
