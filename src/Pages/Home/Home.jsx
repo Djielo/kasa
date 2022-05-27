@@ -7,9 +7,7 @@ const Paragraphe = styled.div`
 function Home() {
   return (
     <div>
-      <header>
-        <Paragraphe>Je suis un test</Paragraphe>
-      </header>
+        <Paragraphe>Je suis la page d'accueil</Paragraphe>
     </div>
   );
 }

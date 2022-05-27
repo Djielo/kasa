@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom/client";
 import { BrowserRouter as Router, Route } from "react-router-dom";
 import { createGlobalStyle } from "styled-components";
-import Header from "../src/Components/Header/Header";
+import Header from "./Components/Header/Header";
 import Home from "./Pages/Home/Home";
 import Lodging from "./Pages/Lodging/Lodging";
 import AboutUs from "./Pages/AboutUs/AboutUs";
