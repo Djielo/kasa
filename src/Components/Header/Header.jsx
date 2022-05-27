@@ -5,15 +5,18 @@ import colors from "../../Utils/styles/colors";
 
 const StyledLink = styled(Link)`
   color: ${colors.primary};
-  padding: 10px;
+  font-size: 24px;
+  padding: 30px;
+  text-transform: none;
 `;
 
 const WrapperHeader = styled.div`
   display: flex;
   justify-content: space-between;
-  align-items: center;
-  padding: 20px 30px;
+  align-items: center;  
+  margin: 30px 80px;
 `;
+
 const Image = styled.img`
   width: 200px;
 `;
@@ -24,8 +27,7 @@ function Header() {
       <Image src={logo} alt="Logo du site KASA" />
       <nav>
         <StyledLink to="/">Accueil</StyledLink>
-        <StyledLink to="/lodging/">Logements</StyledLink>
-        <StyledLink to="/aboutus/">A propos</StyledLink>
+        <StyledLink to="/aboutus/">A Propos</StyledLink>
       </nav>
     </WrapperHeader>
   );

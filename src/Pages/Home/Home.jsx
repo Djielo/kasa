@@ -1,14 +1,19 @@
-import styled from "styled-components"
+import styled from "styled-components";
 
-const Paragraphe = styled.div`
-  font-size: 24px;
+const WrapperHeader = styled.div`
+  margin: 30px 80px;
+`;
+
+const Image = styled.img`
+  width: 100%;
+  height: 223px;
 `;
 
 function Home() {
   return (
-    <div>
-        <Paragraphe>Je suis la page d'accueil</Paragraphe>
-    </div>
+    <WrapperHeader>
+      <Image src="" alt="Emplacement de l'image de logement !" />
+    </WrapperHeader>
   );
 }
 
