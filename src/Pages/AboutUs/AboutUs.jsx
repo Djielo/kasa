@@ -1,13 +1,18 @@
-import styled from "styled-components"
+import Banner from "../../Components/Banner/Banner";
+// import styled from "styled-components";
 
-const Paragraphe = styled.div`
-  font-size: 24px;
-`;
+// const Style = styled.div`
+// display:flex;
+// justify-content:center;
+// align-item:center;
+// `
+
 
 function AboutUs() {
   return (
-    <div>
-        <Paragraphe>Je suis la page "A propos"</Paragraphe>
+    <div className="main">
+      <Banner text="" customStyle="darken"/>
+      {/* <Style className="Galery">Galerie</Style> */}
     </div>
   );
 }

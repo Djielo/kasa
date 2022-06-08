@@ -1,0 +1,21 @@
+@import "../../Utils/styles/color.scss";
+
+.wrapperHeader {
+  grid-area: header;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  a {
+    color: $primaryColor;
+    font-size: 2vw;
+    text-transform: none;
+    text-decoration: none;
+    padding: 0 0 0 3vw;
+  }
+
+  .image {
+    width: 12vw;
+    height: auto;
+  }
+}

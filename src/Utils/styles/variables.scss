@@ -1,0 +1,16 @@
+:root {
+  --wrapper: 100vw;  
+  --wrapperMargin: 50px;
+  --headerHeight: 3rem;
+  --bannerHeight: 223px;
+  --footerHeight: 3rem;
+  @media screen AND (min-width: 768px) {
+    --wrapper: 768px;
+  }
+  @media screen AND (min-width: 1024px) {
+    --wrapper: 1024px;
+  }
+  @media screen AND (min-width: 1440px) {
+    --wrapper: 1440px;
+  }
+}

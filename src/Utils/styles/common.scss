@@ -1,0 +1,27 @@
+* {
+  font-family: "Montserrat", Helvetica, sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  margin: 0;
+  display: grid;
+  grid-template-areas:
+    ". header ."
+    ". banner ."
+    ". main ."
+    "footer footer footer";
+
+  grid-template-columns: 75px auto 75px;
+  // grid-template-columns: var(--wrapperMargin) var(--wrapper) var(--wrapperMargin);
+  min-height: 100vh;
+  // grid-template-rows: var(--headerHeight) minmax(223px,223px) auto var(--footerHeight);
+  grid-template-rows: 170px 242px auto 200px;
+}
+
+.main {
+  grid-area: main;
+}
