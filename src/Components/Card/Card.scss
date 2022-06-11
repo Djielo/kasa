@@ -1,0 +1,24 @@
+.card_item {
+  margin: 20px;
+  width: 29%;
+
+  display: grid;
+  grid-template-areas: "superpose";
+
+  .card_item_cover {
+    width: 100%;
+    aspect-ratio: 1/1;
+    border-radius: 25px;
+    object-fit: cover;
+    grid-area: superpose;
+  }
+
+  .card_item_title {
+    font-size: 1.5em;
+    display: flex;
+    align-items: flex-end;
+    padding: 0 0 0 20px;
+    color: white;
+    grid-area: superpose;
+  }
+}

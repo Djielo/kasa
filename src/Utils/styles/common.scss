@@ -1,5 +1,8 @@
+@import "../styles/color.scss";
+
 * {
   font-family: "Montserrat", Helvetica, sans-serif;
+  color: $primaryColor;
 }
 
 body {
@@ -11,15 +14,14 @@ body {
   display: grid;
   grid-template-areas:
     ". header ."
-    ". banner ."
     ". main ."
     "footer footer footer";
 
-  grid-template-columns: 75px auto 75px;
+  grid-template-columns: 100px auto 100px;
   // grid-template-columns: var(--wrapperMargin) var(--wrapper) var(--wrapperMargin);
-  min-height: 100vh;
+  grid-template-rows: 150px auto 150px;
   // grid-template-rows: var(--headerHeight) minmax(223px,223px) auto var(--footerHeight);
-  grid-template-rows: 170px 242px auto 200px;
+  min-height: 100vh;
 }
 
 .main {
