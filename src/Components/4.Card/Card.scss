@@ -2,8 +2,10 @@
   margin: 20px;
   width: 29%;
 
-  display: grid;
-  grid-template-areas: "superpose";
+  .card_item_superpose {
+    display: grid;
+    grid-template-areas: "superpose";
+  }
 
   .card_item_cover {
     width: 100%;
@@ -17,8 +19,11 @@
     font-size: 1.5em;
     display: flex;
     align-items: flex-end;
-    padding: 0 0 0 20px;
+    padding: 0 0 1rem 20px;
     color: white;
     grid-area: superpose;
+    background: linear-gradient(0deg, rgba(2,0,36,0.3) 0%, rgba(2,0,36,0.3) 25%, rgba(2,0,36,0) 100%);
+    margin: 0;
+    border-radius: 25px;
   }
 }

@@ -1,4 +1,5 @@
-@import "../styles/color.scss";
+@import "./color.scss";
+@import "./variables.scss";
 
 * {
   font-family: "Montserrat", Helvetica, sans-serif;
@@ -17,11 +18,8 @@ body {
     ". main ."
     "footer footer footer";
 
-  grid-template-columns: 100px auto 100px;
-  // grid-template-columns: var(--wrapperMargin) var(--wrapper) var(--wrapperMargin);
-  grid-template-rows: 150px auto 150px;
-  // grid-template-rows: var(--headerHeight) minmax(223px,223px) auto var(--footerHeight);
-  min-height: 100vh;
+  grid-template-columns: var(--wrapperMargin) var(--wrapper) var(--wrapperMargin);
+  grid-template-rows: var(--headerHeight) auto var(--footerHeight);
 }
 
 .main {

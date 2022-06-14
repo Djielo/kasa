@@ -1,16 +1,18 @@
 :root {
-  --wrapper: 100vw;  
-  --wrapperMargin: 50px;
-  --headerHeight: 3rem;
+  --wrapper: 95vw;
+  --wrapperMargin: calc(calc(100vw - var(--wrapper)) / 2);
+  --headerHeight: 5rem;
   --bannerHeight: 223px;
   --footerHeight: 3rem;
   @media screen AND (min-width: 768px) {
-    --wrapper: 768px;
+    --wrapper: 720px;
   }
   @media screen AND (min-width: 1024px) {
-    --wrapper: 1024px;
+    --wrapper: 960px;
   }
   @media screen AND (min-width: 1440px) {
-    --wrapper: 1440px;
+    --wrapper: 1280px;
   }
 }
+
+$largeurTablette: 768px;

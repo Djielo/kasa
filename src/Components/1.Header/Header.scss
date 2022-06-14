@@ -1,7 +1,8 @@
 @import "../../Utils/styles/color.scss";
+@import "../../Utils/styles/mixin.scss";
 
 .wrapperHeader {
-  grid-area: header;  
+  grid-area: header;
   margin: 50px 0 0 0;
   display: flex;
   justify-content: space-between;
@@ -15,8 +16,11 @@
     padding: 0 0 0 3vw;
   }
 
-  .image {
-    width: 12vw;
+  .logo {
+    width: 145px;
     height: auto;
+    @include tablette {
+      width: 210px;
+    }
   }
 }

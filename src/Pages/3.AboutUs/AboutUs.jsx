@@ -1,5 +1,5 @@
-import Banner from "../../Components/Banner/Banner";
-import Commitment from "../../Components/Commitment/Commitment"
+import Banner from "../../Components/2.Banner/Banner";
+import Commitment from "../../Components/6.Commitment/Commitment"
 
 function AboutUs() {
   return (
