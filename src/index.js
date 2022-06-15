@@ -11,7 +11,7 @@ import "./Utils/styles/common.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
-  <React.StrictMode>
+  <React.Fragment>
     <Router>
       <Header />
       <Switch>
@@ -30,5 +30,5 @@ root.render(
       </Switch>
       <Footer />
     </Router>
-  </React.StrictMode>
+  </React.Fragment>
 );

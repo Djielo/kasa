@@ -1,13 +1,9 @@
-import styled from "styled-components"
-
-const Paragraphe = styled.div`
-  font-size: 24px;
-`;
+import LodgingMain from "../../Components/3.2.LodgingMain/LodgingMain"
 
 function Lodging() {
   return (
-    <div>
-        <Paragraphe>Je suis la page des logements</Paragraphe>
+    <div className="main">
+      <LodgingMain />
     </div>
   );
 }
