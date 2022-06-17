@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/jeanlucosmont_11/static/css/main.0a3fa759.css",
+    "main.js": "/jeanlucosmont_11/static/js/main.c56fded6.js",
+    "static/media/aboutBanner.png": "/jeanlucosmont_11/static/media/aboutBanner.48994d589ab9a050990b.png",
+    "static/media/homeBanner.png": "/jeanlucosmont_11/static/media/homeBanner.09ec05dba6d06ca42f95.png",
+    "index.html": "/jeanlucosmont_11/index.html",
+    "main.0a3fa759.css.map": "/jeanlucosmont_11/static/css/main.0a3fa759.css.map",
+    "main.c56fded6.js.map": "/jeanlucosmont_11/static/js/main.c56fded6.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0a3fa759.css",
+    "static/js/main.c56fded6.js"
+  ]
+}
