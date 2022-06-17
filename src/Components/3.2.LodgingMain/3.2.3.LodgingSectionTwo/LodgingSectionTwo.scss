@@ -1,0 +1,18 @@
+.container_section2 {
+  height: 250px;
+  widows: 100%;
+  display: grid;
+  grid-template-areas: "description" "equipments";
+
+  .s2_description {
+    grid-area: description;
+    height: 220px;
+    width: 50%;
+  }
+
+  .s2_equipments {
+    grid-area: equipments;
+    height: 220px;
+    width: 50%;
+  }
+}

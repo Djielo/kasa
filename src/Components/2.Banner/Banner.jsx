@@ -21,8 +21,8 @@ function Banner({ text, customStyle = "" }) {
   const CurrentUrl = useLocation();
   const DecomposingUrl = Object.entries(CurrentUrl);
 
-  console.log(CurrentUrl.pathname);
-  console.log(DecomposingUrl);
+  // console.log(CurrentUrl.pathname);
+  // console.log(DecomposingUrl);
 
   return (
     <div className="banner">
