@@ -2,20 +2,28 @@ import React from "react";
 import { useLocation } from "react-router-dom";
 import dataJson from "../../Datas/lodging.json";
 import LodgingDataArray from "./3.2.0.LodgingDataArray/LodgingDataArray";
-import LodgingCarrousel from "./3.2.1.LodgingCarrousel/LodgingCarrousel";
+import Carrousel from "./3.2.1.Carrousel/Carrousel";
 import LodgingSectionOne from "./3.2.2.LodgingSectionOne/LodgingSectionOne";
 import LodgingSectionTwo from "./3.2.3.LodgingSectionTwo/LodgingSectionTwo";
 
-function LodgingMain() {
-  const CurrentUrl = useLocation();
-  const currentLodging = [...dataJson].filter((data) => data.id === CurrentUrl.pathname.split("/")[2])[0];
+function LodgingMain({ id, title, location, tags, host, rating }) {
+  const currentUrl = useLocation();
+  const currentIdLodging = [...dataJson].filter((data) => data.id === currentUrl.pathname.split("/")[2])[0];
+  // console.log(currentIdLodging);
 
   return (
     <article>
       <React.Fragment>
-        <LodgingCarrousel id={currentLodging.id} cover={currentLodging.cover}  />
-        <LodgingSectionOne id={currentLodging.id} title={currentLodging.title} location={currentLodging.location} tags={currentLodging.tags} host={currentLodging.host} rating={currentLodging.rating} />
-        <LodgingSectionTwo id={currentLodging.id} description={currentLodging.description} equipments={currentLodging.equipments} />
+        <Carrousel id={currentIdLodging.id} cover={currentIdLodging.cover} />
+        <LodgingSectionOne
+          id={currentIdLodging.id}
+          title={currentIdLodging.title}
+          location={currentIdLodging.location}
+          tags={currentIdLodging.tags}
+          host={currentIdLodging.host}
+          rating={currentIdLodging.rating}
+        />
+        <LodgingSectionTwo id={currentIdLodging.id} description={currentIdLodging.description} equipments={currentIdLodging.equipments} />
       </React.Fragment>
     </article>
   );

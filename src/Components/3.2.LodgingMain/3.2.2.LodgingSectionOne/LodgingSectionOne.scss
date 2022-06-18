@@ -1,4 +1,5 @@
 @import "../../../Utils/styles/color.scss";
+@import "./Tags/Tags.scss";
 
 .container_section1 {
   margin-top: 28px;
@@ -26,22 +27,10 @@
     }
 
     .s1_left_tags {
-      display: flex;
-
-      p {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        background: $primaryColor;
-        color: white;
-        margin: 0 10px 0 0;
-        width: max-content;
-        padding: 0 20px;
-        height: 25px;
-        border-radius: 10px;
-      }
+      display: flex;      
     }
   }
+
   .s1_right {
     display: flex;
     flex-direction: column;
@@ -52,11 +41,17 @@
     .s1_right_profil {
       display: flex;
       align-items: center;
+      justify-content: space-between;
+      width: 150px;
+
+      p {
+        margin-right: 10px;
+        text-align: right;
+      }
 
       img {
-        padding-left: 20px;
         border-radius: 50%;
-        width: 60px;        
+        width: 60px;
       }
     }
   }

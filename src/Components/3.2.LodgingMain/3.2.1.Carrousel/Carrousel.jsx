@@ -1,5 +1,5 @@
 import { useLocation } from "react-router-dom";
-import "../3.2.1.LodgingCarrousel/LodgingCarrousel.scss"
+import "./Carrousel.scss";
 
 /**
  *
@@ -9,7 +9,7 @@ import "../3.2.1.LodgingCarrousel/LodgingCarrousel.scss"
  * @returns
  */
 
-function LodgingCarrousel({ cover, id, title }) {
+function Carrousel({ cover, id, title }) {
   const PicturesLodgingMain = () => {
     return <img src={cover} alt={title} className="container_carrousel" />;
   };
@@ -18,4 +18,4 @@ function LodgingCarrousel({ cover, id, title }) {
   return <div>{CurrentUrl.pathname.includes("/lodging/" + id) ? PicturesLodgingMain() : null}</div>;
 }
 
-export default LodgingCarrousel;
+export default Carrousel;

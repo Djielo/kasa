@@ -1,9 +1,11 @@
 import { Link } from "react-router-dom";
-import React from "react";
-import "./CardHomeMain.scss";
+// import React from "react";
+import "./Card.scss";
 
-function CardHomeMain({ id, title, cover }) {
+function Card({ id, title, cover }) {
   const destination = "/lodging/" + id;
+  console.log(title[0]);
+  console.log(id);
 
   return (
     <li key={id} className="card_item">
@@ -15,4 +17,4 @@ function CardHomeMain({ id, title, cover }) {
   );
 }
 
-export default CardHomeMain;
+export default Card;
