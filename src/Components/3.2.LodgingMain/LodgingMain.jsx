@@ -1,7 +1,6 @@
 import React from "react";
 import { useLocation } from "react-router-dom";
 import dataJson from "../../Datas/lodging.json";
-import LodgingDataArray from "./3.2.0.LodgingDataArray/LodgingDataArray";
 import Carrousel from "./3.2.1.Carrousel/Carrousel";
 import LodgingSectionOne from "./3.2.2.LodgingSectionOne/LodgingSectionOne";
 import LodgingSectionTwo from "./3.2.3.LodgingSectionTwo/LodgingSectionTwo";
@@ -13,7 +12,7 @@ function LodgingMain() {
   return (
     <article>
       <React.Fragment>
-        <Carrousel id={currentIdLodging.id} cover={currentIdLodging.cover} />
+        <Carrousel id={currentIdLodging.id} pictures={currentIdLodging.pictures} />
         <LodgingSectionOne
           id={currentIdLodging.id}
           title={currentIdLodging.title}

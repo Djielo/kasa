@@ -9,47 +9,66 @@
   .s2_description {
     width: 50%;
     font-size: 18px;
-    
-    .description_title {       
+
+    .container_title_chevron_desc {
       position: relative;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding-left: 20px;
+      padding: 0 20px;
       background-color: $primaryColor;
       color: white;
       height: 52px;
       border-radius: 10px;
+
+      .description_title {
+        color: white;
+      }
     }
-    .description_text {      
+    .description_text {
       margin-top: -20px;
       padding: 40px 20px;
       background-color: #f7f7f7;
+      border-radius: 10px;
     }
   }
-  
+
   .s2_equipments {
     width: 50%;
     font-size: 18px;
-    
-    .equipments_title {
+
+    .container_title_chevron_equi {
       position: relative;
       display: flex;
+      justify-content: space-between;
       align-items: center;
-      padding-left: 20px;
+      padding: 0 20px;
       background-color: $primaryColor;
       color: white;
       height: 52px;
       border-radius: 10px;
+
+      .equipments_title {
+        color: white;
+      }
     }
-    
+
     .equipments_container {
       margin-top: -20px;
       padding: 40px 20px;
       background-color: #f7f7f7;
-      
+      border-radius: 10px;
+
       .texte {
         line-height: 14px;
       }
     }
   }
+}
+
+.chevon_up,
+.chevron_down,
+.chevron_left,
+.chevron_right {
+  color: white;
 }

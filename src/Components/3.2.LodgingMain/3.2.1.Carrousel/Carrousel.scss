@@ -1,7 +1,25 @@
 .container_carrousel {
-  width: 100%;
-  height: 400px;
-  object-fit: cover;
-  border-radius: 25px;
+  position: relative;
+  display: flex;
+  align-items: center;
   margin-top: 40px;
+
+  .chevron {
+    position: absolute;
+    cursor: pointer;    
+  }
+
+  .chevron_left {
+    left: 20px;
+  }
+  .chevron_right {
+    right: 20px;
+  }
+
+  .picture_carrousel {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    border-radius: 25px;
+  }
 }

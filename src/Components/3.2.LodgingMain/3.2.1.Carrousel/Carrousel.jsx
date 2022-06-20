@@ -1,5 +1,7 @@
-import { useLocation } from "react-router-dom";
+import { useState } from "react";
 import "./Carrousel.scss";
+import chevronLeft from "../../../assets/chevron_left.png";
+import chevronRight from "../../../assets/chevron_right.png";
 
 /**
  *
@@ -9,13 +11,28 @@ import "./Carrousel.scss";
  * @returns
  */
 
-function Carrousel({ cover, id, title }) {
-  const PicturesLodgingMain = () => {
-    return <img src={cover} alt={title} className="container_carrousel" />;
-  };
-  const CurrentUrl = useLocation();
+function Carrousel({ pictures, title }) {
+  let [index, setIndex] = useState(0);
 
-  return <div>{CurrentUrl.pathname.includes("/lodging/" + id) ? PicturesLodgingMain() : null}</div>;
+  const Previous = () => {
+    if(index === 0) {setIndex(pictures.length - 1)}
+    if(index > 0) {setIndex(index--)}
+    if(pictures.length === 1) {setIndex(0)}
+  };
+  const Next = () => {
+    if(index === pictures.length) {setIndex(0)}
+    if(index < pictures.length) {setIndex(index++)}
+    if(pictures.length === 1) {setIndex(0)}
+
+  };
+
+  return (
+    <div className="container_carrousel">
+      <img onClick={Previous} className="chevron chevron_left" src={chevronLeft} alt="précédent" />
+      <img src={pictures[index]} alt={title} className="picture_carrousel" />;
+      <img onClick={Next} className="chevron chevron_right" src={chevronRight} alt="suivant" />
+    </div>
+  );
 }
 
 export default Carrousel;
