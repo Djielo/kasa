@@ -6,10 +6,9 @@ import Carrousel from "./3.2.1.Carrousel/Carrousel";
 import LodgingSectionOne from "./3.2.2.LodgingSectionOne/LodgingSectionOne";
 import LodgingSectionTwo from "./3.2.3.LodgingSectionTwo/LodgingSectionTwo";
 
-function LodgingMain({ id, title, location, tags, host, rating }) {
+function LodgingMain() {
   const currentUrl = useLocation();
   const currentIdLodging = [...dataJson].filter((data) => data.id === currentUrl.pathname.split("/")[2])[0];
-  // console.log(currentIdLodging);
 
   return (
     <article>

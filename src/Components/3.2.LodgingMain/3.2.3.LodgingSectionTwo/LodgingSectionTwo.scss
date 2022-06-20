@@ -1,18 +1,55 @@
+@import "../../../Utils/styles/color.scss";
+
 .container_section2 {
   height: 250px;
-  widows: 100%;
-  display: grid;
-  grid-template-areas: "description" "equipments";
+  width: 100%;
+  display: flex;
+  column-gap: 60px;
 
   .s2_description {
-    grid-area: description;
-    height: 220px;
     width: 50%;
+    font-size: 18px;
+    
+    .description_title {       
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      background-color: $primaryColor;
+      color: white;
+      height: 52px;
+      border-radius: 10px;
+    }
+    .description_text {      
+      margin-top: -20px;
+      padding: 40px 20px;
+      background-color: #f7f7f7;
+    }
   }
-
+  
   .s2_equipments {
-    grid-area: equipments;
-    height: 220px;
     width: 50%;
+    font-size: 18px;
+    
+    .equipments_title {
+      position: relative;
+      display: flex;
+      align-items: center;
+      padding-left: 20px;
+      background-color: $primaryColor;
+      color: white;
+      height: 52px;
+      border-radius: 10px;
+    }
+    
+    .equipments_container {
+      margin-top: -20px;
+      padding: 40px 20px;
+      background-color: #f7f7f7;
+      
+      .texte {
+        line-height: 14px;
+      }
+    }
   }
 }

@@ -1,16 +1,22 @@
-function LodgingSectionTwo({ id, description, equipments }) {
+import Equipments from "./Equipments/Equipments";
+import "./LodgingSectionTwo.scss";
+
+
+function LodgingSectionTwo({description, equipments}) {
   return (
     <section className="container_section2">
       <div className="s2_description">
-        <select>
-          Description
-          <option>
-            Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dicta odit sapiente velit, saepe natus quibusdam nihil minima. Veniam
-            porro laboriosam maiores, quae ullam perferendis? Esse laborum molestias enim accusamus. Soluta.
-          </option>
-        </select>
+        <p className="description_title">Description</p>
+        <p className="description_text">
+          {description}
+        </p>
       </div>
-      <div className="s2_equipments">Equipements</div>
+      <div className="s2_equipments">
+          <p className="equipments_title">Equipements</p>
+          <div className="equipments_container">
+          <Equipments key={equipments} equipments={equipments} />
+          </div>
+      </div>
     </section>
   );
 }

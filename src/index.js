@@ -15,13 +15,13 @@ root.render(
     <Router>
       <Header />
       <Switch>
-        <Route exact path="/">
+        <Route exact path="/home">
           <Home />
         </Route>
-        <Route path="/lodging/">
+        <Route path="/lodging">
           <Lodging />
         </Route>
-        <Route path="/aboutus/">
+        <Route path="/aboutus">
           <AboutUs />
         </Route>
         <Route>
