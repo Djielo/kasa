@@ -18,17 +18,14 @@ function Banner({ text, customStyle = "" }) {
   const HomeBanner = () => {
     return <img className="image" src={homeBanner} alt="Page d'accueil !" />;
   };
-  const CurrentUrl = useLocation();
-  const DecomposingUrl = Object.entries(CurrentUrl);
-
-  // console.log(CurrentUrl.pathname);
-  // console.log(DecomposingUrl);
+  
+  const currentUrl = useLocation();
 
   return (
     <div className="banner">
       <h1 className="h1">{text}</h1>
       <div className={customStyle}>
-        {CurrentUrl.pathname.includes("/aboutus/") ? AboutBanner() : HomeBanner()}
+        {currentUrl.pathname.includes("/aboutus/") ? AboutBanner() : HomeBanner()}
       </div>
     </div>
   );
