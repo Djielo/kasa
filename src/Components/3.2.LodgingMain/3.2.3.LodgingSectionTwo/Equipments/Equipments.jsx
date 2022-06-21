@@ -2,7 +2,7 @@ function Equipments({ equipments }) {
   return (
     <div>
       {equipments.map((equ, index) => (
-        <p key={index} className="equipments">{equ}</p>
+        <li key={index} className="equipments">{equ}</li>
       ))}
     </div>
   );

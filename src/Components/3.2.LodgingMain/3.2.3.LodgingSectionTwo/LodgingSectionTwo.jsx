@@ -18,9 +18,9 @@ function LodgingSectionTwo({ description, equipments }) {
           <p className="title">Equipements</p>
           <img className="chevron_down chevron" src={chevronDown} alt="chevron menu déroulant" />
         </div>
-        <div className="dropdown_content">
+        <ul className="dropdown_content">
           <Equipments key={equipments} equipments={equipments} />
-        </div>
+        </ul>
       </div>
     </section>
   );

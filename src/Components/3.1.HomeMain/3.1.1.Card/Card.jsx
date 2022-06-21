@@ -1,11 +1,8 @@
 import { Link } from "react-router-dom";
-// import React from "react";
 import "./Card.scss";
 
 function Card({ id, title, cover }) {
   const destination = "/lodging/" + id;
-  console.log(title[0]);
-  console.log(id);
 
   return (
     <li key={id} className="card_item">

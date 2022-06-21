@@ -1,7 +1,12 @@
 import chevronDown from "../../assets/chevron_down.png";
+import chevronUp from "../../assets/chevron_up.png";
 import "../4.Dropdown/Dropdown.scss";
+import Dropdown from "../4.Dropdown/Dropdown";
+import { element } from "prop-types";
+import { useState } from "react";
 
 function AboutMain() {
+
   return (
     <section className="section_dropdown st_dd_about">
       <div className="container_dropdown">
@@ -45,6 +50,7 @@ function AboutMain() {
           que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes.
         </p>
       </div>
+      <Dropdown />
     </section>
   );
 }
