@@ -12,7 +12,7 @@ function LodgingMain() {
   return (
     <article>
       <React.Fragment>
-        <Carrousel id={currentIdLodging.id} pictures={currentIdLodging.pictures} />
+        <Carrousel id={currentIdLodging.id} pictures={currentIdLodging.pictures} title={currentIdLodging.title} />
         <LodgingSectionOne
           id={currentIdLodging.id}
           title={currentIdLodging.title}

@@ -1,11 +1,11 @@
 import Banner from "../../Components/2.Banner/Banner";
-import Commitment from "../../Components/3.3.AboutMain/Commitment/Commitment"
+import AboutMain from "../../Components/3.3.AboutMain/AboutMain"
 
 function AboutUs() {
   return (
     <div className="main">
       <Banner text="" customStyle="darken"/>
-      <Commitment className="commitment" />
+      <AboutMain className="aboutmain" />
     </div>
   );
 }

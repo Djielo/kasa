@@ -2,16 +2,48 @@
   --wrapper: 95vw;
   --wrapperMargin: calc(calc(100vw - var(--wrapper)) / 2);
   --headerHeight: 5rem;
-  --bannerHeight: 223px;
   --footerHeight: 3rem;
+  
+  .st_dd_about,
+  .homeMain_container {
+    margin-top: 30px;
+    .homeMain_card_list {
+      padding: 30px;
+      .card_item {
+        width: 40%;
+        .card_item_title{
+          font-size: 1.3em;
+        }
+      }
+    }
+  }
   @media screen AND (min-width: 768px) {
     --wrapper: 720px;
+    .homeMain_card_list {
+      padding: 30px;
+      .card_item {
+        width: 40%;
+        .card_item_title{
+          font-size: 1.3em;
+        }
+      }
+    }
   }
   @media screen AND (min-width: 1024px) {
     --wrapper: 960px;
+    .homeMain_card_list {
+      padding: 30px;
+      .card_item {
+        width: 40%;
+      }
+    }
   }
   @media screen AND (min-width: 1440px) {
     --wrapper: 1280px;
+    .st_dd_about,
+    .homeMain_container {
+      margin-top: 100px;
+    }
   }
 }
 

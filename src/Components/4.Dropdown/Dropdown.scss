@@ -1,0 +1,57 @@
+@import "../../Utils/styles/color.scss";
+
+.section_dropdown {
+  height: 250px;
+  width: 100%;
+  display: flex;
+  column-gap: 60px;
+
+  .container_dropdown {
+    width: 50%;
+    font-size: 18px;
+
+    .dropdown_title {
+      position: relative;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 0 20px;
+      background-color: $primaryColor;
+      color: white;
+      height: 52px;
+      border-radius: 10px;
+
+      .title {
+        color: white;
+      }
+    }
+    .dropdown_content {
+      margin-top: -20px;
+      padding: 40px 20px;
+      background-color: #f7f7f7;
+      border-radius: 10px;
+    }
+  }
+}
+
+.chevon_up,
+.chevron_down,
+.chevron_left,
+.chevron_right {
+  color: white;
+}
+
+// FOR ABOUT PAGE
+
+.st_dd_about{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 100px;
+  height: max-content;
+  
+  .container_dropdown{
+    width: 80%;
+    margin-bottom: 40px;
+  }
+}
