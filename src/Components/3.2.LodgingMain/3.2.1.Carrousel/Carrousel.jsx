@@ -8,16 +8,13 @@ import chevronRight from "../../../assets/chevron_right.png";
  * @param {Object} props
  * @param {String} cover
  * @param {String} title
- * @param {Event} e
  * @returns
  */
 
 function Carrousel({ pictures, title }) {
   let [index, setIndex] = useState(0);
 
-  const Previous = (e) => {
-    e.stopPropagation();
-    e.preventDefault();
+  const Previous = () => {
     if (index === 0) {
       return setIndex(pictures.length - 1);
     }
@@ -29,7 +26,7 @@ function Carrousel({ pictures, title }) {
     }
   };
 
-  const Next = (e) => {
+  const Next = () => {
     if (index === pictures.length) {
       return setIndex(0);
     }

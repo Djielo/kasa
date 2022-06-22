@@ -11,9 +11,16 @@
   a {
     color: $primaryColor;
     font-size: 1.6vw;
+    padding: 0 0 0 3vw;
+  }
+
+  .active_link {
+    text-decoration: underline;
+  }
+
+  .unselected {
     text-transform: none;
     text-decoration: none;
-    padding: 0 0 0 3vw;
   }
 
   .logo {

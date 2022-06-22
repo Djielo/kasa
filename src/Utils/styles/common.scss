@@ -1,15 +1,17 @@
 @import "./color.scss";
 @import "./variables.scss";
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
+
 
 * {
   font-family: "Montserrat", Helvetica, sans-serif;
   color: $primaryColor;
   margin: 0;
+  padding: 0;
 }
 
-body {
-  margin: 0;
+body, html {
+  height: 100%;
 }
 
 #root {
@@ -26,4 +28,5 @@ body {
 
 .main {
   grid-area: main;
+  min-height: calc(100vh - var(--footerHeight)) ;
 }

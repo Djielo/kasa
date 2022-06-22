@@ -1,27 +1,29 @@
 .card_item {
   margin: 20px;
   width: 29%;
+  text-decoration: none;
 
   .card_item_superpose {
-    display: grid;
-    grid-template-areas: "superpose";
+    position: relative;
   }
 
-  .card_item_cover {
+  .card_item_cover {    
     width: 100%;
     aspect-ratio: 1/1;
     border-radius: 25px;
     object-fit: cover;
-    grid-area: superpose;
+    
   }
 
   .card_item_title {
+    position: absolute;
+    bottom: 0;
+    left: 0;
     font-size: 1.5em;
     display: flex;
     align-items: flex-end;
-    padding: 0 0 1rem 20px;
-    color: white;
-    grid-area: superpose;
+    padding: 0 15px 10px 15px;
+    color: white;    
     background: linear-gradient(0deg, rgba(2,0,36,0.3) 0%, rgba(2,0,36,0.3) 25%, rgba(2,0,36,0) 100%);
     margin: 0;
     border-radius: 25px;

@@ -7,18 +7,20 @@
   flex-direction: column;
   align-items: center;
 
- .error_title {
-    font-size: 20vw;
-    margin: 100px 0 0 0;
+  .error_title {
+    font-size: 288px;
+    font-weight: 700;
+    margin: 150px 0 0 0;
   }
-
+  
   .error_txt {
-    font-size: 2vw;
-    margin-top: 50px;
+    font-size: 36px;
+    margin-top: 20px;
+    font-weight: bold;
   }
 
   .error_link {
     font-size: 1.2vw;
-    margin-top: 250px;
+    margin-top: 200px;
   }
 }

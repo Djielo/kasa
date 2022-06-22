@@ -16,16 +16,18 @@
     h1 {
       margin: 0;
       font-size: 36px;
-      font-weight: normal;
+      font-weight: 500;
     }
 
     h3 {
       margin: 5px 0 20px 0;
       font-size: 18px;
-      font-weight: bold;
+      font-weight: 500;
     }
 
     .s1_left_tags {
+      font-size: 14px;
+      font-weight: 500;
       display: flex;
     }
   }
@@ -43,15 +45,22 @@
       justify-content: space-between;
       width: 150px;
 
-      p {
+      .hostName {
+        font-size: 18px;
         margin-right: 10px;
         text-align: right;
       }
 
-      img {
+      .hostPicture {
+        flex-grow: 1;
         border-radius: 50%;
         width: 60px;
       }
+    }
+    .s1_right_stars .stars {
+      width: 30px;
+      height: 30px;
+      margin-left: 5px;
     }
   }
 }

@@ -5,9 +5,9 @@ const Stars = ({ rating }) => {
   const currentRating = rating;
   const stars = [1, 2, 3, 4, 5];
   return (
-    <div className="stars s1_right_stars">
+    <div className="s1_right_stars">
       {stars.map((star) => (
-        <img key={star} src={star <= currentRating ? fullStar : emptyStar }  alt="étoiles" />
+        <img className="stars" key={star} src={star <= currentRating ? fullStar : emptyStar }  alt="étoiles" />
       ))}
     </div>
   );

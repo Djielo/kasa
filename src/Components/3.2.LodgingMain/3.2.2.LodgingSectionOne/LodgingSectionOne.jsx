@@ -23,8 +23,8 @@ function LodgingSectionOne({ id, title, location, tags, host, rating }) {
       </div>
       <div className="s1_right">
         <div className="s1_right_profil">
-          <p>{host.name}</p>
-          <img src={host.picture} alt="Host" />
+          <p className="hostName">{host.name}</p>
+          <img className="hostPicture" src={host.picture} alt="Host" />
         </div>
         <Stars key={rating} rating={rating} />
       </div>
