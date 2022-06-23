@@ -32,8 +32,6 @@
       padding: 16px;
       width: 250px;
     }
-    .image {
-    }
   }
 
   .homeMain_container {
@@ -80,7 +78,7 @@
     .s1_left {
       display: flex;
       flex-direction: column;
-      justify-content: start;
+      justify-content: flex-start;
       height: 0;
 
       h1 {
@@ -151,8 +149,8 @@
 
 /*About*/
 @media screen AND (max-width: 375px) {
-  .about_banner_responsive {    
-    height: 223px;    
+  .about_banner_responsive {
+    height: 223px;
   }
 }
 
