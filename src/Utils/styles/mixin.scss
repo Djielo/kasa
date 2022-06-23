@@ -1,7 +1,0 @@
-@import "./variables.scss";
-
-@mixin tablette {
-  @media screen AND (min-width: $largeurTablette) {
-    @content;
-  }
-}

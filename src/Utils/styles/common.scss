@@ -1,32 +1,28 @@
 @import "./color.scss";
-@import "./variables.scss";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap");
 
+#root {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
 
 * {
+  box-sizing: border-box;
   font-family: "Montserrat", Helvetica, sans-serif;
   color: $primaryColor;
-  margin: 0;
   padding: 0;
-}
-
-body, html {
-  height: 100%;
-}
-
-#root {
   margin: 0;
-  display: grid;
-  grid-template-areas:
-    ". header ."
-    ". main ."
-    "footer footer footer";
+}
 
-  grid-template-columns: var(--wrapperMargin) var(--wrapper) var(--wrapperMargin);
-  grid-template-rows: var(--headerHeight) auto var(--footerHeight);
+body,
+html {
+  margin: 0 auto;
+  max-width: 1440px;
+  position: relative;
 }
 
 .main {
-  grid-area: main;
-  min-height: calc(100vh - var(--footerHeight)) ;
+  padding-bottom: 200px;
+  margin: 0 100px;
 }

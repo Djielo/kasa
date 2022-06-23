@@ -1,17 +1,16 @@
 @import "../../Utils/styles/color.scss";
-@import "../../Utils/styles/mixin.scss";
 
 .wrapperHeader {
-  grid-area: header;
-  margin: 50px 0 0 0;
+  margin: 40px 100px 20px 100px;
+  height: 68px;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   a {
     color: $primaryColor;
-    font-size: 1.6vw;
-    padding: 0 0 0 3vw;
+    font-size: 24px;
+    padding-left: 30px;
   }
 
   .active_link {
@@ -26,8 +25,5 @@
   .logo {
     width: 145px;
     height: auto;
-    @include tablette {
-      width: 210px;
-    }
   }
 }

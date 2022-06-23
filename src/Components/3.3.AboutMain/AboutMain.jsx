@@ -3,7 +3,7 @@ import Dropdown from "../4.Dropdown/Dropdown";
 
 function AboutMain() {
   return (
-    <section className="section_dropdown st_dd_about">
+    <section className="section_dropdown section_dropdown_about">
       <Dropdown
         title="Fiabilité"
         contents=" Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les

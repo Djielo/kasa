@@ -25,9 +25,7 @@
       font-weight: 500;
     }
 
-    .s1_left_tags {
-      font-size: 14px;
-      font-weight: 500;
+    .s1_left_tags {      
       display: flex;
     }
   }
@@ -52,14 +50,13 @@
       }
 
       .hostPicture {
-        flex-grow: 1;
         border-radius: 50%;
         width: 60px;
       }
     }
     .s1_right_stars .stars {
       width: 30px;
-      height: 30px;
+      height: auto;
       margin-left: 5px;
     }
   }

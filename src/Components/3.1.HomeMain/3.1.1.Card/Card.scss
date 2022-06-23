@@ -1,31 +1,36 @@
 .card_item {
+  position: relative;
   margin: 20px;
   width: 29%;
+  max-width: 340px;
+  aspect-ratio: 1/1;
   text-decoration: none;
+  border-radius: 10px;
+  overflow: hidden;
 
   .card_item_superpose {
-    position: relative;
+    position: absolute;
+    height: 100%;
   }
 
-  .card_item_cover {    
+  .card_item_cover {
     width: 100%;
     aspect-ratio: 1/1;
-    border-radius: 25px;
+    border-radius: 10px;
     object-fit: cover;
-    
   }
 
   .card_item_title {
     position: absolute;
     bottom: 0;
     left: 0;
-    font-size: 1.5em;
+    width: 100%;
+    font-size: 18px;
     display: flex;
     align-items: flex-end;
     padding: 0 15px 10px 15px;
-    color: white;    
-    background: linear-gradient(0deg, rgba(2,0,36,0.3) 0%, rgba(2,0,36,0.3) 25%, rgba(2,0,36,0) 100%);
+    color: white;
+    background: linear-gradient(0deg, rgba(2, 0, 36, 0.3) 0%, rgba(2, 0, 36, 0.3) 25%, rgba(2, 0, 36, 0) 100%);
     margin: 0;
-    border-radius: 25px;
   }
 }

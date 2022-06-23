@@ -11,7 +11,7 @@ import { useLocation } from "react-router-dom";
  * @returns
  */
 
-function Banner({ text, customStyle = "" }) {
+function Banner({ text, customStyle = "", page }) {
   const AboutBanner = () => {
     return <img className="image" src={aboutBanner} alt="Page 'A propos' !" />;
   };
@@ -22,10 +22,10 @@ function Banner({ text, customStyle = "" }) {
   const currentUrl = useLocation();
 
   return (
-    <div className="banner">
+    <div className={page === "aboutus" ? "banner about_banner_responsive" : "banner"}>
       <h1 className="h1">{text}</h1>
       <div className={customStyle}>
-        {currentUrl.pathname.includes("/aboutus/") ? AboutBanner() : HomeBanner()}
+        {currentUrl.pathname.includes("/aboutus") ? AboutBanner() : HomeBanner()}
       </div>
     </div>
   );

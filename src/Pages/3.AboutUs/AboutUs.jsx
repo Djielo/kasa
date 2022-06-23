@@ -4,7 +4,7 @@ import AboutMain from "../../Components/3.3.AboutMain/AboutMain"
 function AboutUs() {
   return (
     <div className="main">
-      <Banner text="" customStyle="darken"/>
+      <Banner text="" customStyle="darken" page="aboutus"/>
       <AboutMain className="aboutmain" />
     </div>
   );
