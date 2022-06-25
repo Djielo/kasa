@@ -16,25 +16,17 @@ function Carrousel({ pictures, title }) {
 
   const Previous = () => {
     if (index === 0) {
-      return setIndex(pictures.length - 1);
-    }
-    if (index > 0) {
-      return setIndex(index--);
-    }
-    if (pictures.length === 1) {
-      return setIndex(0);
+      setIndex(pictures.length - 1);
+    } else {
+      setIndex(index - 1);
     }
   };
 
   const Next = () => {
-    if (index === pictures.length) {
-      return setIndex(0);
-    }
-    if (index < pictures.length) {
-      return setIndex(index++);
-    }
-    if (pictures.length === 1) {
-      return setIndex(0);
+    if (index === pictures.length - 1) {
+      setIndex(0);
+    } else {
+      setIndex(index + 1);
     }
   };
 
