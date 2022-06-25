@@ -5,7 +5,6 @@ import "./3.1.1.Card/Card.scss";
 
 function HomeMain() {
   const detailsJson = dataJson;
-  // console.log(detailsJson);
 
   return (
     <div className="homeMain_container">

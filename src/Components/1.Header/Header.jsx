@@ -7,11 +7,11 @@ function Header() {
     <div className="wrapperHeader">
       <img className="logo" src={logo} alt="Logo du site KASA" />
       <nav>
-        <NavLink to="/home" className={(isActive) => "active_link" + (!isActive ? " unselected" : "")}>
+        <NavLink to="/kasa/home" className={(isActive) => "active_link" + (!isActive ? " unselected" : "")}>
           Accueil
         </NavLink>
 
-        <NavLink to="/aboutus" className={(isActive) => "active_link" + (!isActive ? " unselected" : "")}>
+        <NavLink to="/kasa/aboutus" className={(isActive) => "active_link" + (!isActive ? " unselected" : "")}>
           A Propos
         </NavLink>
       </nav>

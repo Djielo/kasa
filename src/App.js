@@ -13,13 +13,13 @@ const App = () => {
       <Router>
         <Header />
         <Switch>
-          <Route exact path="/home">
+          <Route exact path="/kasa/home">
             <Home />
           </Route>
-          <Route path="/lodging">
+          <Route path="/kasa/lodging">
             <Lodging />
           </Route>
-          <Route path="/aboutus">
+          <Route path="/kasa/aboutus">
             <AboutUs />
           </Route>
           <Route>

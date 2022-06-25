@@ -7,7 +7,7 @@ import LodgingSectionTwo from "./3.2.3.LodgingSectionTwo/LodgingSectionTwo";
 
 function LodgingMain() {
   const currentUrl = useLocation();
-  const currentIdLodging = [...dataJson].filter((data) => data.id === currentUrl.pathname.split("/")[2])[0];
+  const currentIdLodging = [...dataJson].filter((data) => data.id === currentUrl.pathname.split("/lodging/")[1])[0];
 
   return (
     <article>

@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 import "./Card.scss";
 
 function Card({ id, title, cover }) {
-  const destination = "/lodging/" + id;
+  const destination = "lodging/" + id;
 
   return (
     <li key={id} className="card_item">
