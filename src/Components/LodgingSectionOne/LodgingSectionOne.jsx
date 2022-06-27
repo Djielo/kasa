@@ -1,6 +1,6 @@
-import "../4.3.LodgingSectionOne/LodgingSectionOne.scss";
-import Tags from "../4.5.Tags/Tags";
-import Stars from "../4.4.Stars/Stars";
+import "../LodgingSectionOne/LodgingSectionOne.scss";
+import Tags from "../Tags/Tags";
+import Stars from "../Stars/Stars";
 
 /**
  *

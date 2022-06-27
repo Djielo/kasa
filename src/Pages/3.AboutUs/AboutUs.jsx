@@ -1,10 +1,10 @@
-import Banner from "../../Components/2.Banner/Banner";
-import AboutMain from "../../Components/5.1.AboutMain/AboutMain"
+import Banner from "../../Components/Banner/Banner";
+import AboutMain from "../../Components/AboutMain/AboutMain";
 
 function AboutUs() {
   return (
     <div className="main">
-      <Banner text="" customStyle="darken" page="aboutus"/>
+      <Banner text="" customStyle="darken" page="aboutus" />
       <AboutMain className="aboutmain" />
     </div>
   );

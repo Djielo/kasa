@@ -1,5 +1,5 @@
-import "../6.Dropdown/Dropdown.scss";
-import Dropdown from "../6.Dropdown/Dropdown";
+import "../Dropdown/Dropdown.scss";
+import Dropdown from "../Dropdown/Dropdown";
 
 function AboutMain() {
   return (

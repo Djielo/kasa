@@ -1,7 +1,7 @@
 import dataJson from "../../Datas/lodging.json";
 import "./HomeMain.scss";
-import Card from "../3.2.Card/Card";
-import "../3.2.Card/Card.scss";
+import Card from "../Card/Card";
+import "../Card/Card.scss";
 
 function HomeMain() {
   const detailsJson = dataJson;

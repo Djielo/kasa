@@ -1,5 +1,5 @@
 @import "../../Utils/styles/color.scss";
-@import "../4.5.Tags/Tags.scss";
+@import "../Tags/Tags.scss";
 
 .container_section1 {
   margin-top: 28px;
@@ -25,7 +25,7 @@
       font-weight: 500;
     }
 
-    .s1_left_tags {      
+    .s1_left_tags {
       display: flex;
     }
   }

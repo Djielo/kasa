@@ -1,4 +1,4 @@
-import LodgingMain from "../../Components/4.1.LodgingMain/LodgingMain"
+import LodgingMain from "../../Components/LodgingMain/LodgingMain";
 
 function Lodging() {
   return (

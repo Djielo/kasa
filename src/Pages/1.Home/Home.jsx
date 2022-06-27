@@ -1,5 +1,5 @@
-import Banner from "../../Components/2.Banner/Banner";
-import HomeMain from "../../Components/3.1.HomeMain/HomeMain";
+import Banner from "../../Components/Banner/Banner";
+import HomeMain from "../../Components/HomeMain/HomeMain";
 
 function Home() {
   return (
