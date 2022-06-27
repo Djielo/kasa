@@ -1,16 +1,16 @@
 import React from "react";
-import { useLocation } from "react-router-dom";
+import { useLocation, Redirect } from "react-router-dom";
 import dataJson from "../../Datas/lodging.json";
-import Carrousel from "./3.2.1.Carrousel/Carrousel";
-import LodgingSectionOne from "./3.2.2.LodgingSectionOne/LodgingSectionOne";
-import LodgingSectionTwo from "./3.2.3.LodgingSectionTwo/LodgingSectionTwo";
+import Carrousel from "../4.2.Carrousel/Carrousel";
+import LodgingSectionOne from "../4.3.LodgingSectionOne/LodgingSectionOne";
+import LodgingSectionTwo from "../4.6.LodgingSectionTwo/LodgingSectionTwo";
 
 function LodgingMain() {
   const currentUrl = useLocation();
   const currentIdLodging = [...dataJson].filter((data) => data.id === currentUrl.pathname.split("/lodging/")[1])[0];
 
   return currentIdLodging === undefined ? (
-    (window.location.pathname = "/kasa/error/")
+    <Redirect to= "/kasa/error/" />
   ) : (
     <article>
       <React.Fragment>

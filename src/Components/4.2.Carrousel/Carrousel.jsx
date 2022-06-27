@@ -1,7 +1,7 @@
 import { useState } from "react";
 import "./Carrousel.scss";
-import chevronLeft from "../../../assets/chevron_left.png";
-import chevronRight from "../../../assets/chevron_right.png";
+import chevronLeft from "../../assets/chevron_left.png";
+import chevronRight from "../../assets/chevron_right.png";
 
 /**
  *

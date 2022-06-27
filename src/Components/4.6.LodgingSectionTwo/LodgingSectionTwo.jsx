@@ -1,4 +1,4 @@
-import Dropdown from "../../4.Dropdown/Dropdown";
+import Dropdown from "../6.Dropdown/Dropdown";
 
 function LodgingSectionTwo({ description, equipments }) {
   return (

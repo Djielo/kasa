@@ -1,5 +1,5 @@
 import Banner from "../../Components/2.Banner/Banner";
-import AboutMain from "../../Components/3.3.AboutMain/AboutMain"
+import AboutMain from "../../Components/5.1.AboutMain/AboutMain"
 
 function AboutUs() {
   return (

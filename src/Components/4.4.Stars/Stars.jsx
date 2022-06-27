@@ -1,5 +1,5 @@
-import fullStar from "../../../../assets/full_star.png";
-import emptyStar from "../../../../assets/empty_star.png";
+import fullStar from "../../assets/full_star.png";
+import emptyStar from "../../assets/empty_star.png";
 
 const Stars = ({ rating }) => {
   const currentRating = rating;
