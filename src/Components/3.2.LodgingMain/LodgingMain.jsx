@@ -9,7 +9,9 @@ function LodgingMain() {
   const currentUrl = useLocation();
   const currentIdLodging = [...dataJson].filter((data) => data.id === currentUrl.pathname.split("/lodging/")[1])[0];
 
-  return (
+  return currentIdLodging === undefined ? (
+    (window.location.pathname = "/kasa/error/")
+  ) : (
     <article>
       <React.Fragment>
         <Carrousel id={currentIdLodging.id} pictures={currentIdLodging.pictures} title={currentIdLodging.title} />
