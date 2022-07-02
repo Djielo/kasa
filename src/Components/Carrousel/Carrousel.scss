@@ -16,10 +16,24 @@
     right: 20px;
   }
 
+  .hidden {
+    display: none ;
+  }
+
   .picture_carrousel {
     width: 100%;
     height: 400px;
     object-fit: cover;
     border-radius: 25px;
+  }
+
+  .number_picture{
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    right: 50%;
+    color: white;
+    font-size: 18px;
+    font-weight: 500;
   }
 }

@@ -32,9 +32,10 @@ function Carrousel({ pictures, title }) {
 
   return (
     <div className="container_carrousel">
-      <img onClick={Previous} className={pictures.length > 1 ? "chevron chevron_left" : ""} src={chevronLeft} alt="précédent" />
+      <img onClick={Previous} className={pictures.length > 1 ? "chevron chevron_left" : "hidden"} src={chevronLeft} alt="précédent" />
       <img src={pictures[index]} alt={title} className="picture_carrousel" />
-      <img onClick={Next} className={pictures.length > 1 ? "chevron chevron_right" : ""} src={chevronRight} alt="suivant" />
+      <p className="number_picture">{index + 1}/{pictures.length}</p>
+      <img onClick={Next} className={pictures.length > 1 ? "chevron chevron_right" : "hidden"} src={chevronRight} alt="suivant" />
     </div>
   );
 }
